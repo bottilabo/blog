@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:8888/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8888/blog/" rel="alternate" type="text/html" /><updated>2020-07-23T21:58:28+09:00</updated><id>http://localhost:8888/blog/feed.xml</id><title type="html">Bottilabo blog</title><subtitle>qmk midi selfmade keyboard layout</subtitle><entry><title type="html">Onehand Keyboard</title><link href="http://localhost:8888/blog/keyboard/2020/07/23/onehand-keyboard.html" rel="alternate" type="text/html" title="Onehand Keyboard" /><published>2020-07-23T00:00:00+09:00</published><updated>2020-07-23T00:00:00+09:00</updated><id>http://localhost:8888/blog/keyboard/2020/07/23/onehand-keyboard</id><content type="html" xml:base="http://localhost:8888/blog/keyboard/2020/07/23/onehand-keyboard.html">&lt;p&gt;&lt;img src=&quot;https://github.com/bottilabo/bottilabo_onehand_keyboard/raw/master/onehand-keyboard.png&quot; alt=&quot;onehand keyboard&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:8888/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8888/blog/" rel="alternate" type="text/html" /><updated>2020-07-23T22:07:54+09:00</updated><id>http://localhost:8888/blog/feed.xml</id><title type="html">Bottilabo blog</title><subtitle>qmk midi selfmade keyboard layout</subtitle><entry><title type="html">Onehand Keyboard</title><link href="http://localhost:8888/blog/keyboard/2020/07/23/onehand-keyboard.html" rel="alternate" type="text/html" title="Onehand Keyboard" /><published>2020-07-23T00:00:00+09:00</published><updated>2020-07-23T00:00:00+09:00</updated><id>http://localhost:8888/blog/keyboard/2020/07/23/onehand-keyboard</id><content type="html" xml:base="http://localhost:8888/blog/keyboard/2020/07/23/onehand-keyboard.html">&lt;p&gt;&lt;img src=&quot;https://github.com/bottilabo/bottilabo_onehand_keyboard/raw/master/onehand-keyboard.png&quot; alt=&quot;onehand keyboard&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;github&quot;&gt;&lt;a href=&quot;https://github.com/bottilabo/bottilabo_onehand_keyboard&quot;&gt;github&lt;/a&gt;&lt;/h1&gt;
 
@@ -64,7 +64,7 @@
 &lt;/table&gt;
 
 &lt;h2 id=&quot;with-no-layer-key&quot;&gt;with no LAYER key&lt;/h2&gt;
-&lt;p&gt;|   |   |   |   |   |   |
+&lt;p&gt;| 5 | 5 | 4 | 3 | 2 | 2 |
 |—|—|—|—|—|—|
 |ESC| , | s | u | t | p |
 |TAB| a | o | e | i | c |
@@ -174,7 +174,7 @@
 &lt;/table&gt;
 
 &lt;h2 id=&quot;with-lay0&quot;&gt;with LAY0&lt;/h2&gt;
-&lt;p&gt;|     |   |      |      |      |        |
+&lt;p&gt;|  5  | 5 | 4    | 3    | 2    | 2      |
 |—–|—|——|——|——|——–|
 | ESC | &amp;lt; | z    | v    | d    | f      |
 | TAB | l | r    | n    | ENT  | g      |
@@ -288,12 +288,12 @@
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;5&lt;/th&gt;
+      &lt;th&gt;5&lt;/th&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -337,12 +337,12 @@
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;5&lt;/th&gt;
+      &lt;th&gt;5&lt;/th&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -386,12 +386,12 @@
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;5&lt;/th&gt;
+      &lt;th&gt;5&lt;/th&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
