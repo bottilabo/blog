@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:8888/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8888/blog/" rel="alternate" type="text/html" /><updated>2020-07-23T21:58:28+09:00</updated><id>http://localhost:8888/blog/feed.xml</id><title type="html">Bottilabo blog</title><subtitle>qmk midi selfmade keyboard layout</subtitle><entry><title type="html">Onehand Keyboard</title><link href="http://localhost:8888/blog/keyboard/2020/07/23/onehand-keyboard.html" rel="alternate" type="text/html" title="Onehand Keyboard" /><published>2020-07-23T00:00:00+09:00</published><updated>2020-07-23T00:00:00+09:00</updated><id>http://localhost:8888/blog/keyboard/2020/07/23/onehand-keyboard</id><content type="html" xml:base="http://localhost:8888/blog/keyboard/2020/07/23/onehand-keyboard.html">&lt;p&gt;&lt;img src=&quot;https://github.com/bottilabo/bottilabo_onehand_keyboard/raw/master/onehand-keyboard.png&quot; alt=&quot;onehand keyboard&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;github&quot;&gt;&lt;a href=&quot;https://github.com/bottilabo/bottilabo_onehand_keyboard&quot;&gt;github&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h1 id=&quot;source-code&quot;&gt;&lt;a href=&quot;https://github.com/bottilabo/qmk_firmware/tree/bottilabo_onehand&quot;&gt;Source code&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bottilabo/qmk_firmware/tree/bottilabo_onehand/users/bottilabo_onehand&quot;&gt;users/bottilabo_onehand&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bottilabo/qmk_firmware/tree/bottilabo_onehand/keyboards/crkbd/keymaps/bottilabo_onehand&quot;&gt;crkbd&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bottilabo/qmk_firmware/tree/bottilabo_onehand/keyboards/silverbullet44/keymaps/bottilabo_onehand&quot;&gt;SilverBullet44&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;コンパイル済みファームウェア&quot;&gt;コンパイル済みファームウェア&lt;/h1&gt;
+&lt;p&gt;右クリックで保存してください&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/bottilabo/bottilabo_onehand_keyboard/raw/master/precompiled/crkbd_rev1_bottilabo_onehand.hex&quot;&gt;onehand crkbd&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/bottilabo/bottilabo_onehand_keyboard/raw/master/precompiled/silverbullet44_bottilabo_onehand.hex&quot;&gt;onehand SilverBullet44&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;使い方&quot;&gt;使い方&lt;/h1&gt;
+
+&lt;p&gt;レイヤーキーと同時打鍵の組み合わせで様々な文字を入力できます。&lt;/p&gt;
+
+&lt;h1 id=&quot;layer-key&quot;&gt;LAYER key&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;LAY key&lt;/th&gt;
+      &lt;th&gt;Layer&lt;/th&gt;
+      &lt;th&gt;single tap&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;LAY0&lt;/td&gt;
+      &lt;td&gt;chr layer&lt;/td&gt;
+      &lt;td&gt;Space&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;LAY1&lt;/td&gt;
+      &lt;td&gt;Cursor&lt;/td&gt;
+      &lt;td&gt;Backspace&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;LAY2&lt;/td&gt;
+      &lt;td&gt;Number&lt;/td&gt;
+      &lt;td&gt;Tab&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;LAY3&lt;/td&gt;
+      &lt;td&gt;Fn keys&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;LAY1+LAY2&lt;/td&gt;
+      &lt;td&gt;LAY3&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;with-no-layer-key&quot;&gt;with no LAYER key&lt;/h2&gt;
+&lt;p&gt;|   |   |   |   |   |   |
+|—|—|—|—|—|—|
+|ESC| , | s | u | t | p |
+|TAB| a | o | e | i | c |
+|SFT| . | x | - | h | j |
+|   |   |LAY2|LAY1|LAY0|(LAY3)|&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;(QWERTY)&lt;/th&gt;
+      &lt;th&gt;simultaneous&lt;/th&gt;
+      &lt;th&gt;output&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;QW&lt;/td&gt;
+      &lt;td&gt;,s&lt;/td&gt;
+      &lt;td&gt;!&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;AS&lt;/td&gt;
+      &lt;td&gt;ao&lt;/td&gt;
+      &lt;td&gt;_&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ZX&lt;/td&gt;
+      &lt;td&gt;.x&lt;/td&gt;
+      &lt;td&gt;?&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;WE&lt;/td&gt;
+      &lt;td&gt;su&lt;/td&gt;
+      &lt;td&gt;[&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SD&lt;/td&gt;
+      &lt;td&gt;oe&lt;/td&gt;
+      &lt;td&gt;(&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;XC&lt;/td&gt;
+      &lt;td&gt;x-&lt;/td&gt;
+      &lt;td&gt;{&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ER&lt;/td&gt;
+      &lt;td&gt;ut&lt;/td&gt;
+      &lt;td&gt;w&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;DF&lt;/td&gt;
+      &lt;td&gt;ei&lt;/td&gt;
+      &lt;td&gt;y&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CV&lt;/td&gt;
+      &lt;td&gt;-h&lt;/td&gt;
+      &lt;td&gt;m&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RT&lt;/td&gt;
+      &lt;td&gt;tp&lt;/td&gt;
+      &lt;td&gt;`&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;FG&lt;/td&gt;
+      &lt;td&gt;ic&lt;/td&gt;
+      &lt;td&gt;/&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;VG&lt;/td&gt;
+      &lt;td&gt;hj&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RG&lt;/td&gt;
+      &lt;td&gt;tc&lt;/td&gt;
+      &lt;td&gt;&amp;amp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;FB&lt;/td&gt;
+      &lt;td&gt;ij&lt;/td&gt;
+      &lt;td&gt;^&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;EF&lt;/td&gt;
+      &lt;td&gt;ui&lt;/td&gt;
+      &lt;td&gt;’&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;DV&lt;/td&gt;
+      &lt;td&gt;eh&lt;/td&gt;
+      &lt;td&gt;;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SE&lt;/td&gt;
+      &lt;td&gt;ou&lt;/td&gt;
+      &lt;td&gt;@&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;XD&lt;/td&gt;
+      &lt;td&gt;xe&lt;/td&gt;
+      &lt;td&gt;#&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;with-lay0&quot;&gt;with LAY0&lt;/h2&gt;
+&lt;p&gt;|     |   |      |      |      |        |
+|—–|—|——|——|——|——–|
+| ESC | &amp;lt; | z    | v    | d    | f      |
+| TAB | l | r    | n    | ENT  | g      |
+| SFT | &amp;gt; | q    | =    | b    | k      |
+|     |   | LAY2 | LAY1 | LAY0 | (LAY3) |&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;(QWERTY)&lt;/th&gt;
+      &lt;th&gt;simultaneous&lt;/th&gt;
+      &lt;th&gt;output&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;QW&lt;/td&gt;
+      &lt;td&gt;&amp;lt;z&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;AS&lt;/td&gt;
+      &lt;td&gt;lr&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ZX&lt;/td&gt;
+      &lt;td&gt;&amp;gt;q&lt;/td&gt;
+      &lt;td&gt;|&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;WE&lt;/td&gt;
+      &lt;td&gt;zv&lt;/td&gt;
+      &lt;td&gt;]&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SD&lt;/td&gt;
+      &lt;td&gt;rn&lt;/td&gt;
+      &lt;td&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;XC&lt;/td&gt;
+      &lt;td&gt;q=&lt;/td&gt;
+      &lt;td&gt;}&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ER&lt;/td&gt;
+      &lt;td&gt;vd&lt;/td&gt;
+      &lt;td&gt;*&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;DF&lt;/td&gt;
+      &lt;td&gt;n ENT&lt;/td&gt;
+      &lt;td&gt;+&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CV&lt;/td&gt;
+      &lt;td&gt;=b&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RT&lt;/td&gt;
+      &lt;td&gt;df&lt;/td&gt;
+      &lt;td&gt;~&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;FG&lt;/td&gt;
+      &lt;td&gt;ENT g&lt;/td&gt;
+      &lt;td&gt;\&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;VG&lt;/td&gt;
+      &lt;td&gt;bk&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RG&lt;/td&gt;
+      &lt;td&gt;dg&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;FB&lt;/td&gt;
+      &lt;td&gt;ENT k&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;EF&lt;/td&gt;
+      &lt;td&gt;v ENT&lt;/td&gt;
+      &lt;td&gt;”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;DV&lt;/td&gt;
+      &lt;td&gt;nb&lt;/td&gt;
+      &lt;td&gt;:&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SE&lt;/td&gt;
+      &lt;td&gt;rv&lt;/td&gt;
+      &lt;td&gt;$&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;XD&lt;/td&gt;
+      &lt;td&gt;qn&lt;/td&gt;
+      &lt;td&gt;%&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;with-lay1&quot;&gt;with LAY1&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;DEL&lt;/td&gt;
+      &lt;td&gt;PgUp&lt;/td&gt;
+      &lt;td&gt;HOME&lt;/td&gt;
+      &lt;td&gt;UP&lt;/td&gt;
+      &lt;td&gt;END&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;INS&lt;/td&gt;
+      &lt;td&gt;PgDn&lt;/td&gt;
+      &lt;td&gt;LEFT&lt;/td&gt;
+      &lt;td&gt;DOWN&lt;/td&gt;
+      &lt;td&gt;RGHT&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SFT&lt;/td&gt;
+      &lt;td&gt;CTL&lt;/td&gt;
+      &lt;td&gt;GUI&lt;/td&gt;
+      &lt;td&gt;ALT&lt;/td&gt;
+      &lt;td&gt;EN&lt;/td&gt;
+      &lt;td&gt;JP&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;LAY3&lt;/td&gt;
+      &lt;td&gt;LAY1&lt;/td&gt;
+      &lt;td&gt;LAY0&lt;/td&gt;
+      &lt;td&gt;(LAY3)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;with-lay2&quot;&gt;with LAY2&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt;/&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;+&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;*&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;.&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;LAY2&lt;/td&gt;
+      &lt;td&gt;LAY3&lt;/td&gt;
+      &lt;td&gt;LAY0&lt;/td&gt;
+      &lt;td&gt;(LAY3)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;with-lay3&quot;&gt;with LAY3&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RSET&lt;/td&gt;
+      &lt;td&gt;F1&lt;/td&gt;
+      &lt;td&gt;F2&lt;/td&gt;
+      &lt;td&gt;F3&lt;/td&gt;
+      &lt;td&gt;F4&lt;/td&gt;
+      &lt;td&gt;F5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;PSCR&lt;/td&gt;
+      &lt;td&gt;F6&lt;/td&gt;
+      &lt;td&gt;F7&lt;/td&gt;
+      &lt;td&gt;F8&lt;/td&gt;
+      &lt;td&gt;F9&lt;/td&gt;
+      &lt;td&gt;F10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;LSCR&lt;/td&gt;
+      &lt;td&gt;F11&lt;/td&gt;
+      &lt;td&gt;F12&lt;/td&gt;
+      &lt;td&gt;F13&lt;/td&gt;
+      &lt;td&gt;LCAP&lt;/td&gt;
+      &lt;td&gt;LNUM&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;LAY3&lt;/td&gt;
+      &lt;td&gt;LAY3&lt;/td&gt;
+      &lt;td&gt;LAY0&lt;/td&gt;
+      &lt;td&gt;(LAY3)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;longpress-長押し&quot;&gt;longpress 長押し&lt;/h1&gt;
+
+&lt;p&gt;0.2秒以上キーを長押しすることでシフトキーを押すのと同じ効果を得ることができます。&lt;/p&gt;
+
+&lt;h1 id=&quot;mod-keysftctlaltgui&quot;&gt;MOD key(SFT,CTL,ALT,GUI)&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;シングルタップでワンショットキーになり、次に押す１キーが影響を受けます。&lt;/li&gt;
+  &lt;li&gt;ダブルタップでロックされ、更にもう一度MODキーを押すと解除されます。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;日本語ローマ字モード&quot;&gt;日本語ローマ字モード&lt;/h1&gt;
+
+&lt;p&gt;JP key(LAY1) で日本語ローマ字モードになります。
+| from         | to  |
+|————–|—–|
+| c            | k   |
+| x            | nn  |
+| l(longpress) | wo  |
+| q            | ltu |&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;子音とシフトキー（長押し）すると、子音のあとに y が付きます。&lt;/li&gt;
+  &lt;li&gt;母音とシフトキー（長押し）すると、母音のあとに nn が付きます。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ex. k(longpress) a(longpress) -&amp;gt; kyann&lt;/p&gt;</content><author><name></name></author><category term="keyboard" /><summary type="html"></summary></entry><entry><title type="html">Keyboard Layout</title><link href="http://localhost:8888/blog/keyboard/2020/07/12/keyboard-layout.html" rel="alternate" type="text/html" title="Keyboard Layout" /><published>2020-07-12T00:00:00+09:00</published><updated>2020-07-12T00:00:00+09:00</updated><id>http://localhost:8888/blog/keyboard/2020/07/12/keyboard-layout</id><content type="html" xml:base="http://localhost:8888/blog/keyboard/2020/07/12/keyboard-layout.html">&lt;h1 id=&quot;keyboard-layouts&quot;&gt;Keyboard layouts&lt;/h1&gt;
+
+&lt;p&gt;　多くの人が交互打鍵率が高いほど良い配列と思っているのではないでしょうか。DVORAK配列はQWERTYより優れた配列の特徴の一つとして交互打鍵率の高さを挙げていることはその原因の一つでしょう。&lt;/p&gt;
+
+&lt;p&gt;　私は交互打鍵配列は初心者向けで高速打鍵には向かないと考えています。私はDVORAK配列をかなり頑張った頃がありましたが、最後までQWERTYの速度を超えることはできませんでした。QWERTYはボロクソに言われていますが、むしろ高速打鍵向きの配列だと思います。&lt;/p&gt;
+
+&lt;p&gt;　こんなことを考えながら作ったのがこれらの配列です。私は普段、英語とプログラミングにSERIO4、日本語入力にBottilabo Dvorakを使っています。英語入力ではQWERTYで超えられなかった壁をやすやすと超えて自己記録を更新中です。
+　&lt;/p&gt;
+
+&lt;h2 id=&quot;serio4&quot;&gt;SERIO4&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;            &quot;| |1|2|3|4|5| | |6|7|8|9|0| | |&quot;,
+            &quot;| |q|w|u|p|f| | |j|l|d|y|-| | |&quot;,
+            &quot;| |a|s|e|r|g| | |h|n|t|i|o| | |&quot;,
+            &quot;| |z|x|c|v|b| | |k|m|,|.|/| | |&quot;
+            
+  Position_cost, 0.7557450257003122
+  consecutive_fastmove, 15.345948304686127
+  consecutive_finger, 7.328697643051848
+  consecutive_row, 29.890851595572858
+  distance_total, 0.5984772494148716
+  dominant_fingers, 67.83391987842548
+  fastmove, 25.67234510390433
+  hand_switch, 49.758581410768635
+  homerow_jump, 1.0084609848291652
+  left/right, 0.009580237678301184
+  near_key, 20.426506174308756
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;QWERTY compatibility: 15/30&lt;/li&gt;
+  &lt;li&gt;全指を使った高速入力向け英語配列&lt;/li&gt;
+  &lt;li&gt;左右交互打鍵を減らして、アルペジオ・ロール打鍵を増やした配列&lt;/li&gt;
+  &lt;li&gt;QWERTY配列との互換性を重視&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;idea&quot;&gt;IDEA&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;            &quot;| |1|2|3|4|5| | |6|7|8|9|0| | |&quot;,
+            &quot;| |w|q|u|p|z| | |v|f|d|y|j| | |&quot;,
+            &quot;| |s|a|e|r|g| | |l|n|t|i|o| | |&quot;,
+            &quot;| |-|,|x|c|b| | |k|h|m|.|/| | |&quot;
+            
+  Position_cost, 0.7763987827062684
+  consecutive_fastmove, 16.07473775480712
+  consecutive_finger, 6.278016740622361
+  consecutive_row, 26.649552015505197
+  distance_total, 0.5838221209699813
+  dominant_fingers, 66.68165615412158
+  fastmove, 27.871889468824
+  hand_switch, 48.61552672889145
+  homerow_jump, 1.1478717194557313
+  left/right, -0.028077661979972468
+  near_key, 21.958607479442584
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;ゼロから高速タイピングの練習を始める人向け&lt;/li&gt;
+  &lt;li&gt;全指を使った高速入力向け英語配列&lt;/li&gt;
+  &lt;li&gt;左右交互打鍵を減らして、アルペジオ・ロール打鍵を増やした配列&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;bottilabo-dvorak&quot;&gt;Bottilabo Dvorak&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;            &quot;| |1|2|3|4|5| | |6|7|8|9|0| | |&quot;,
+            &quot;| |q|w|u|p|f| | |y|l|k|r|g| | |&quot;,
+            &quot;| |a|o|e|i|-| | |d|h|t|n|s| | |&quot;,
+            &quot;| |z|x|c|v|j| | |b|m|,|.|/| | |&quot;
+
+  Position_cost, 0.8830579121259003
+  consecutive_fastmove, 6.427344905557727
+  consecutive_finger, 8.343959151521334
+  consecutive_row, 17.438809454994704
+  distance_total, 0.6029145910901806
+  dominant_fingers, 62.63276605623743
+  fastmove, 18.739692956356986
+  hand_switch, 60.86638671177681
+  homerow_jump, 1.7398006313152778
+  left/right, 0.0008160628368384382
+  name, bottilabo-dvorak
+  near_key, 16.28725411856713
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;QWERTY compatibility: 12/30&lt;/li&gt;
+  &lt;li&gt;DVORAK compatibility: 11/30&lt;/li&gt;
+  &lt;li&gt;DVORAK配列をベースに、英語、ローマ字入力の両方に最適化した左右交互打鍵配列&lt;/li&gt;
+  &lt;li&gt;DVORAK配列の特徴を持ちつつ、QWERTYとの互換性を持つ&lt;/li&gt;
+  &lt;li&gt;ローマ字入力の快適さを重視&lt;/li&gt;
+  &lt;li&gt;ローマ字入力時は、Ｍ式キーボードからヒントを得た同時打鍵Ｍ式DVORAK入力が可能&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sidestep-b&quot;&gt;SideStep-b&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;            &quot;| |1|2|3|4|5| | |6|7|8|9|0| | |&quot;,
+            &quot;| |q|u|e|r|w| | |p|t|i|o|y| | |&quot;,
+            &quot;| |f|d|g|s|j| | |k|l|a|h|-| | |&quot;,
+            &quot;| |z|x|c|v|b| | |m|n|,|.|/| | |&quot;
+            
+  Position_cost, 1.1830700963974226
+  consecutive_fastmove, 12.580118669137525
+  consecutive_finger, 9.629541474693552
+  consecutive_row, 18.052556713533612
+  distance_total, 0.8403378726828632
+  dominant_fingers, 73.74513337517806
+  fastmove, 25.075655825505507
+  hand_switch, 48.52768663187065
+  homerow_jump, 11.536238290348356
+  left/right, -0.05754376420317697
+  near_key, 20.99633338433726
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;QWERTY compatibility: 13/30&lt;/li&gt;
+  &lt;li&gt;QWERTY配列を同列内で入れ替え、キーキャップを入れ替えても凸凹にならない高速打鍵向き配列&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;参考-他の配列の性能&quot;&gt;参考: 他の配列の性能&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Position_cost 低いほど動かしやすい指で入力できる。
+  consecutive_fastmove 高いほど連続的な高速入力が多くなる。
+  consecutive_finger 低いほど連続的な同指打鍵少なくなり、高速になる。
+  consecutive_row 高いほど連続して同じ行での入力が増える。
+  distance_total 低いほど指を動かさずに済み、疲れにくい。
+  dominant_fingers 高いほど人差し指、中指のような強く、器用な指での入力が多くなる。
+  fastmove 高いほど高速な指使いが多くなる。
+  hand_switch 高いほど左右交互打鍵の割合が高くなる。
+  homerow_jump 低いほど連続した最下段と最上段の入力が少なく。
+  left/right ０に近いほど左右の指を均等に使用する。
+  near_key 高いほど前回の入力位置から近いキーを打鍵する。
+  
+QWERTY
+  Position_cost, 1.4586159800971341
+  consecutive_fastmove, 10.565746895844313
+  consecutive_finger, 10.668604815904157
+  consecutive_row, 16.656749236357864
+  distance_total, 0.7663170064094935
+  dominant_fingers, 63.8785936516375
+  fastmove, 17.390837427812684
+  hand_switch, 52.659288098516924
+  homerow_jump, 10.753044651104801
+  left/right, 0.09019194477974801
+  near_key, 14.364972769569922
+
+DVORAK
+  Position_cost, 0.9579585961452365
+  consecutive_fastmove, 4.5688184656885245
+  consecutive_finger, 5.888686762214023
+  consecutive_row, 18.428852354964665
+  distance_total, 0.5878485976753544
+  dominant_fingers, 61.36809534326601
+  fastmove, 15.865678323897598
+  hand_switch, 67.16593844392685
+  homerow_jump, 1.33856973653638
+  left/right, -0.06364440061884763
+  near_key, 11.60027655462804
+
+COLEMAK
+  Position_cost, 0.7363989527193594
+  consecutive_fastmove, 9.305099826019937
+  consecutive_finger, 5.454019959536884
+  consecutive_row, 24.75872308834447
+  distance_total, 0.5866415047291975
+  dominant_fingers, 68.1662104647985
+  fastmove, 20.733011441882677
+  hand_switch, 59.06481465739528
+  homerow_jump, 0.6542670452291492
+  left/right, -0.01636092645800391
+  near_key, 13.740174660115494
+
+ARENSITO
+  Position_cost, 0.8067078665057209
+  consecutive_fastmove, 12.343800472636394
+  consecutive_finger, 4.9337799010523815
+  consecutive_row, 25.347818448687214
+  distance_total, 0.5549595652198552
+  dominant_fingers, 59.418980261395426
+  fastmove, 24.30977518601852
+  hand_switch, 50.78631054591204
+  homerow_jump, 1.140221130360371
+  left/right, -0.008392979592761973
+  near_key, 25.794386167734917
+
+WORKMAN
+  Position_cost, 0.7870968564579472
+  consecutive_fastmove, 10.347280073899023
+  consecutive_finger, 6.791739630618224
+  consecutive_row, 22.53920218523493
+  distance_total, 0.5892795411913384
+  dominant_fingers, 65.48802257766025
+  fastmove, 21.70075429141329
+  hand_switch, 56.48514935650045
+  homerow_jump, 1.6607445439965545
+  left/right, 0.009784253387510877
+  near_key, 16.660999563633066
+  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="keyboard" /><summary type="html">Keyboard layouts</summary></entry><entry><title type="html">Qmk Midiin</title><link href="http://localhost:8888/blog/keyboard/2020/07/12/qmk-midiin.html" rel="alternate" type="text/html" title="Qmk Midiin" /><published>2020-07-12T00:00:00+09:00</published><updated>2020-07-12T00:00:00+09:00</updated><id>http://localhost:8888/blog/keyboard/2020/07/12/qmk-midiin</id><content type="html" xml:base="http://localhost:8888/blog/keyboard/2020/07/12/qmk-midiin.html">&lt;h1 id=&quot;pcからmidi信号をqmkのmidi-inに送って制御する&quot;&gt;PCからmidi信号をqmkのmidi inに送って制御する&lt;/h1&gt;
+
+&lt;p&gt;　後でちゃんと書く。やってることは簡単。本当は可変サイズのSysExメッセージでやりたかったけど、なんかうまく行かない。なので3byte固定のnote onで色数125色でやってみた。このやり方で、さらにチャンネル情報を使って最高2048色まで可能。&lt;/p&gt;
+
+&lt;h2 id=&quot;keymapc&quot;&gt;keymap.c&lt;/h2&gt;
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &quot;midi.h&quot;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;extern&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MidiDevice&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;midi_device&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;matrix_init_user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;midi_register_noteon_callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;midi_device&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;midi_note&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;midi_note&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MidiDevice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;device&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint8_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;byte0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint8_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;note&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint8_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;setrgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LED_TYPE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;led&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;note&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;rgblight_set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;pc&quot;&gt;PC&lt;/h2&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;time&lt;/span&gt;
+
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;rtmidi.midiutil&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;open_midioutput&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Prompts user for MIDI input port, unless a valid port number or name
+# is given as the first argument on the command line.
+# API backend defaults to ALSA on Linux.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;midiout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;port_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;open_midioutput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;port&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;EOFError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;KeyboardInterrupt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;
+				&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+					&lt;span class=&quot;n&quot;&gt;midiout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send_message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;0x90&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;128&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+					&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.005&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;midiout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close_port&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;del&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;midiout&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="keyboard" /><summary type="html">PCからmidi信号をqmkのmidi inに送って制御する</summary></entry></feed>

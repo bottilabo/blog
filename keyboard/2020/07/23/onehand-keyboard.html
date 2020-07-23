@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Onehand Keyboard | Bottilabo blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Onehand Keyboard" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="qmk midi selfmade keyboard layout" />
+<meta property="og:description" content="qmk midi selfmade keyboard layout" />
+<link rel="canonical" href="http://localhost:8888/blog/keyboard/2020/07/23/onehand-keyboard.html" />
+<meta property="og:url" content="http://localhost:8888/blog/keyboard/2020/07/23/onehand-keyboard.html" />
+<meta property="og:site_name" content="Bottilabo blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-07-23T00:00:00+09:00" />
+<script type="application/ld+json">
+{"headline":"Onehand Keyboard","dateModified":"2020-07-23T00:00:00+09:00","datePublished":"2020-07-23T00:00:00+09:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:8888/blog/keyboard/2020/07/23/onehand-keyboard.html"},"url":"http://localhost:8888/blog/keyboard/2020/07/23/onehand-keyboard.html","description":"qmk midi selfmade keyboard layout","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8888/blog/feed.xml" title="Bottilabo blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Bottilabo blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Onehand Keyboard</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-07-23T00:00:00+09:00" itemprop="datePublished">Jul 23, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><img src="https://github.com/bottilabo/bottilabo_onehand_keyboard/raw/master/onehand-keyboard.png" alt="onehand keyboard" /></p>
+
+<h1 id="github"><a href="https://github.com/bottilabo/bottilabo_onehand_keyboard">github</a></h1>
+
+<h1 id="source-code"><a href="https://github.com/bottilabo/qmk_firmware/tree/bottilabo_onehand">Source code</a></h1>
+<ul>
+  <li><a href="https://github.com/bottilabo/qmk_firmware/tree/bottilabo_onehand/users/bottilabo_onehand">users/bottilabo_onehand</a></li>
+  <li><a href="https://github.com/bottilabo/qmk_firmware/tree/bottilabo_onehand/keyboards/crkbd/keymaps/bottilabo_onehand">crkbd</a></li>
+  <li><a href="https://github.com/bottilabo/qmk_firmware/tree/bottilabo_onehand/keyboards/silverbullet44/keymaps/bottilabo_onehand">SilverBullet44</a></li>
+</ul>
+
+<h1 id="コンパイル済みファームウェア">コンパイル済みファームウェア</h1>
+<p>右クリックで保存してください</p>
+<ul>
+  <li>
+    <p><a href="https://github.com/bottilabo/bottilabo_onehand_keyboard/raw/master/precompiled/crkbd_rev1_bottilabo_onehand.hex">onehand crkbd</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/bottilabo/bottilabo_onehand_keyboard/raw/master/precompiled/silverbullet44_bottilabo_onehand.hex">onehand SilverBullet44</a></p>
+  </li>
+</ul>
+
+<h1 id="使い方">使い方</h1>
+
+<p>レイヤーキーと同時打鍵の組み合わせで様々な文字を入力できます。</p>
+
+<h1 id="layer-key">LAYER key</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>LAY key</th>
+      <th>Layer</th>
+      <th>single tap</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LAY0</td>
+      <td>chr layer</td>
+      <td>Space</td>
+    </tr>
+    <tr>
+      <td>LAY1</td>
+      <td>Cursor</td>
+      <td>Backspace</td>
+    </tr>
+    <tr>
+      <td>LAY2</td>
+      <td>Number</td>
+      <td>Tab</td>
+    </tr>
+    <tr>
+      <td>LAY3</td>
+      <td>Fn keys</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>LAY1+LAY2</td>
+      <td>LAY3</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="with-no-layer-key">with no LAYER key</h2>
+<p>|   |   |   |   |   |   |
+|—|—|—|—|—|—|
+|ESC| , | s | u | t | p |
+|TAB| a | o | e | i | c |
+|SFT| . | x | - | h | j |
+|   |   |LAY2|LAY1|LAY0|(LAY3)|</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>(QWERTY)</th>
+      <th>simultaneous</th>
+      <th>output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>QW</td>
+      <td>,s</td>
+      <td>!</td>
+    </tr>
+    <tr>
+      <td>AS</td>
+      <td>ao</td>
+      <td>_</td>
+    </tr>
+    <tr>
+      <td>ZX</td>
+      <td>.x</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td>WE</td>
+      <td>su</td>
+      <td>[</td>
+    </tr>
+    <tr>
+      <td>SD</td>
+      <td>oe</td>
+      <td>(</td>
+    </tr>
+    <tr>
+      <td>XC</td>
+      <td>x-</td>
+      <td>{</td>
+    </tr>
+    <tr>
+      <td>ER</td>
+      <td>ut</td>
+      <td>w</td>
+    </tr>
+    <tr>
+      <td>DF</td>
+      <td>ei</td>
+      <td>y</td>
+    </tr>
+    <tr>
+      <td>CV</td>
+      <td>-h</td>
+      <td>m</td>
+    </tr>
+    <tr>
+      <td>RT</td>
+      <td>tp</td>
+      <td>`</td>
+    </tr>
+    <tr>
+      <td>FG</td>
+      <td>ic</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td>VG</td>
+      <td>hj</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>RG</td>
+      <td>tc</td>
+      <td>&amp;</td>
+    </tr>
+    <tr>
+      <td>FB</td>
+      <td>ij</td>
+      <td>^</td>
+    </tr>
+    <tr>
+      <td>EF</td>
+      <td>ui</td>
+      <td>’</td>
+    </tr>
+    <tr>
+      <td>DV</td>
+      <td>eh</td>
+      <td>;</td>
+    </tr>
+    <tr>
+      <td>SE</td>
+      <td>ou</td>
+      <td>@</td>
+    </tr>
+    <tr>
+      <td>XD</td>
+      <td>xe</td>
+      <td>#</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="with-lay0">with LAY0</h2>
+<p>|     |   |      |      |      |        |
+|—–|—|——|——|——|——–|
+| ESC | &lt; | z    | v    | d    | f      |
+| TAB | l | r    | n    | ENT  | g      |
+| SFT | &gt; | q    | =    | b    | k      |
+|     |   | LAY2 | LAY1 | LAY0 | (LAY3) |</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>(QWERTY)</th>
+      <th>simultaneous</th>
+      <th>output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>QW</td>
+      <td>&lt;z</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>AS</td>
+      <td>lr</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ZX</td>
+      <td>&gt;q</td>
+      <td>|</td>
+    </tr>
+    <tr>
+      <td>WE</td>
+      <td>zv</td>
+      <td>]</td>
+    </tr>
+    <tr>
+      <td>SD</td>
+      <td>rn</td>
+      <td>)</td>
+    </tr>
+    <tr>
+      <td>XC</td>
+      <td>q=</td>
+      <td>}</td>
+    </tr>
+    <tr>
+      <td>ER</td>
+      <td>vd</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>DF</td>
+      <td>n ENT</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CV</td>
+      <td>=b</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>RT</td>
+      <td>df</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>FG</td>
+      <td>ENT g</td>
+      <td>\</td>
+    </tr>
+    <tr>
+      <td>VG</td>
+      <td>bk</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>RG</td>
+      <td>dg</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FB</td>
+      <td>ENT k</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>EF</td>
+      <td>v ENT</td>
+      <td>”</td>
+    </tr>
+    <tr>
+      <td>DV</td>
+      <td>nb</td>
+      <td>:</td>
+    </tr>
+    <tr>
+      <td>SE</td>
+      <td>rv</td>
+      <td>$</td>
+    </tr>
+    <tr>
+      <td>XD</td>
+      <td>qn</td>
+      <td>%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="with-lay1">with LAY1</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DEL</td>
+      <td>PgUp</td>
+      <td>HOME</td>
+      <td>UP</td>
+      <td>END</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>INS</td>
+      <td>PgDn</td>
+      <td>LEFT</td>
+      <td>DOWN</td>
+      <td>RGHT</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>SFT</td>
+      <td>CTL</td>
+      <td>GUI</td>
+      <td>ALT</td>
+      <td>EN</td>
+      <td>JP</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>LAY3</td>
+      <td>LAY1</td>
+      <td>LAY0</td>
+      <td>(LAY3)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="with-lay2">with LAY2</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>-</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>+</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>.</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>LAY2</td>
+      <td>LAY3</td>
+      <td>LAY0</td>
+      <td>(LAY3)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="with-lay3">with LAY3</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RSET</td>
+      <td>F1</td>
+      <td>F2</td>
+      <td>F3</td>
+      <td>F4</td>
+      <td>F5</td>
+    </tr>
+    <tr>
+      <td>PSCR</td>
+      <td>F6</td>
+      <td>F7</td>
+      <td>F8</td>
+      <td>F9</td>
+      <td>F10</td>
+    </tr>
+    <tr>
+      <td>LSCR</td>
+      <td>F11</td>
+      <td>F12</td>
+      <td>F13</td>
+      <td>LCAP</td>
+      <td>LNUM</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>LAY3</td>
+      <td>LAY3</td>
+      <td>LAY0</td>
+      <td>(LAY3)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="longpress-長押し">longpress 長押し</h1>
+
+<p>0.2秒以上キーを長押しすることでシフトキーを押すのと同じ効果を得ることができます。</p>
+
+<h1 id="mod-keysftctlaltgui">MOD key(SFT,CTL,ALT,GUI)</h1>
+
+<ul>
+  <li>シングルタップでワンショットキーになり、次に押す１キーが影響を受けます。</li>
+  <li>ダブルタップでロックされ、更にもう一度MODキーを押すと解除されます。</li>
+</ul>
+
+<h1 id="日本語ローマ字モード">日本語ローマ字モード</h1>
+
+<p>JP key(LAY1) で日本語ローマ字モードになります。
+| from         | to  |
+|————–|—–|
+| c            | k   |
+| x            | nn  |
+| l(longpress) | wo  |
+| q            | ltu |</p>
+
+<ul>
+  <li>子音とシフトキー（長押し）すると、子音のあとに y が付きます。</li>
+  <li>母音とシフトキー（長押し）すると、母音のあとに nn が付きます。</li>
+</ul>
+
+<p>ex. k(longpress) a(longpress) -&gt; kyann</p>
+
+
+  </div><a class="u-url" href="/blog/keyboard/2020/07/23/onehand-keyboard.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Bottilabo blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Bottilabo blog</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/bottilabo"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">bottilabo</span></a></li><li><a href="https://www.twitter.com/bottilabo"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">bottilabo</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>qmk midi selfmade keyboard layout</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
